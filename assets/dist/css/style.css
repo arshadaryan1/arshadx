@@ -18,7 +18,9 @@
     font-weight: 700;
 }
 .navbar{
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     font-weight: 600;
 }
 .banner-style{
@@ -226,16 +228,18 @@ width: 70vh;
 }
 .lead{
     padding: 1.7rem;
-    background-color: #00ffd5;
+    /* background-color: #00ffd5; */
+    background: rgb(0,212,255);
+background: linear-gradient(90deg, rgb(136, 239, 67) 0%, rgba(169,158,245,1) 41%, rgba(248,123,215,1) 95%, rgba(255,120,212,1) 100%);
 }
 .lead h2{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
     /* margin-left: 100px; */
 }
-.lead-heading{
-    
+.lead p{
+    font-size: 18px;
 }
 .lead-content{
     display: flex;
@@ -252,6 +256,7 @@ width: 70vh;
     margin: auto;
     color: #ff0000;
 }
+
 
 /* ===================top section start from here====================== */
 .top{
@@ -280,6 +285,54 @@ width: 70vh;
     padding: 2%;
     margin: auto;
     width: 40vh;
+    justify-content: space-between;
+}
+.card-box img{
+    margin-left: 25%;
+}
+.card-box h3, .lead h2, .slider h3{
+    font-family: gilroy-B;
+/* font-size: 20px; */
+}
+.card-box a{
+    text-decoration: none;
+}
+.card-box a:hover{
+    color: #ff0000;
+}
+.card-box:hover{
+    background: linear-gradient(130deg, rgb(136, 239, 67) 6%, rgba(169,158,245,1) 20%, rgba(248,123,215,1) 40%, rgba(255,120,212,1) 100%);
+    margin-top: -0.5%;
+    color: #ffffff;
+}
+.card-box a{
+    padding: 1%;
+    border: 2px solid;
+    border-radius: 10px;
+    border-image: 
+          linear-gradient(
+            to right, 
+            red, 
+            rgba(255, 255, 255, 0.048)
+          ) 100 1%;
+}
+.card-box a:hover{
+    padding: 1%;
+    border: 2px solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-image: 
+          linear-gradient(
+            to right, 
+            red, 
+            rgba(255, 255, 255, 0.048)
+          ) 100 1%;
+}
+.challenge h3{
+    color: #989898;
 }
 
 
@@ -306,3 +359,14 @@ position: absolute;
     background-color: #1500b5;
     z-index: -1;
 }
+
+.company{
+    background-color: rgb(233, 223, 223);
+  
+}
+.about-company{
+    justify-content: space-between;
+}
+
+
+
