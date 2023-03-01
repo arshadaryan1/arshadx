@@ -14,6 +14,20 @@
     margin: 0;
     font-family:  gilroy-L;
 }
+
+::selection {
+    color: #cd1212;
+    /* background-color: #54d78917; */
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background: #00b50f;
+}
+::-webkit-scrollbar-thumb{
+    background: red;
+}
 .logo-text{
     font-weight: 700;
 }
@@ -361,12 +375,116 @@ position: absolute;
 }
 
 .company{
-    background-color: rgb(233, 223, 223);
+    background-color: rgb(244, 240, 240);
   
 }
+
 .about-company{
+    margin-top: 5%;
     justify-content: space-between;
 }
+.why-section h1, .why-section h3{
+    /* margin-top: 10%; */
+    line-height: 35.8px;
+font-weight: 1000;
+font-size: 25px;
 
+}
+.number {
 
+}
+.number hr{
+    width: 35vw;
+    margin-top: -3%;
+    margin-left: 8%;
+    
+}
+.number-text{
+    /* padding-bottom: 5px; */
+}
+.our-company{
+    margin-bottom: 5%;
+}
 
+.our-company h5{
+    font-size: smaller;
+    font-weight: 900;
+}
+.our-company h2{
+    font-size: 32px;
+    font-family: gilroy-B;
+    /* font-weight: bolder; */
+}
+
+footer{
+
+	bottom: 0;
+	background: black;
+	height: auto;
+	width: 100vw;
+	padding: 25px 0 0 0;
+}
+/*content*/
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 24px;
+}
+/*social -media*/
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: dodgerblue;
+}
+/* copyright*/
+.footer-copyright{
+    background: #ce424289;
+    width: 100vw;
+    /* padding: 20px 20px 50px 20px; */
+    padding-bottom: 2px;
+}
+.footer-copyright p{
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    word-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+}
+.stay-connected{
+    color: #fff;
+}
+.instagram:hover{
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
