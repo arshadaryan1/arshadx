@@ -75,7 +75,7 @@
 .animate-charcter
 {
   text-transform: uppercase;
-  background-image: linear-gradient(    -225deg,    #cd1212 0%,    #05f811 29%,    #ff1361 67%,    #fff800 100%  );
+  background-image: linear-gradient(    -225deg,    #e4cfcf 0%,    #f805a3 29%,    #13ff79 67%,    #c6c0bf 100%  );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -235,6 +235,9 @@ width: 70vh;
   }
 }
 /* heading animation   end here*/
+.navbar{
+    background: linear-gradient(270deg, rgb(136, 239, 67) 0%, rgba(169,158,245,1) 41%, rgba(248,123,215,1) 95%, rgba(255,120,212,1) 100%);
+}
 /* end slider section css */
 .lead-section{
     box-shadow: 2px 1px 4px 2px rgba(0,0,0,.2);
@@ -316,7 +319,7 @@ background: linear-gradient(90deg, rgb(136, 239, 67) 0%, rgba(169,158,245,1) 41%
 }
 .card-box:hover{
     background: linear-gradient(130deg, rgb(136, 239, 67) 6%, rgba(169,158,245,1) 20%, rgba(248,123,215,1) 40%, rgba(255,120,212,1) 100%);
-    margin-top: -0.5%;
+    margin-top: -0.8%;
     color: #ffffff;
 }
 .card-box a{
@@ -465,7 +468,8 @@ footer{
 }
 /* copyright*/
 .footer-copyright{
-    background: #ce424289;
+    background:rgba(242, 54, 54, 0.998);
+    
     width: 100vw;
     /* padding: 20px 20px 50px 20px; */
     padding-bottom: 2px;
@@ -488,3 +492,79 @@ background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#c
 background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
+
+
+.types ul li{
+    align-items: flex-start;
+  }
+   .type li {
+      display: inline;
+    }
+  .types button{
+      border: 2px solid #dada;
+      margin: auto;
+      
+      padding: 5px 15px;
+      border-radius: 17px;
+      -webkit-border-radius: 17px;
+      -moz-border-radius: 17px;
+      -ms-border-radius: 17px;
+      -o-border-radius: 17px;
+  }
+  
+  .img-section{
+      margin-left: 200px;
+  }
+  .main-sectionn .overflow-hidden{
+    margin: auto;
+  }
+  .card h1{
+      font-weight: 700;
+      font-size: 20px;
+  }
+  
+  /* =================== */
+  .rainbow-1:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
+  }
+  
+  .rainbow-2:hover{
+   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+   animation:slidebg 2s linear infinite;
+  }
+  
+  .rainbow-3:hover{
+   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+   animation:slidebg 2s linear infinite;
+  }
+  
+  .rainbow-4:hover{
+    background-image:     linear-gradient(
+       to right, 
+       #E7484F,
+       #F68B1D, 
+       #FCED00,
+       #009E4F,
+       #00AAC3,
+       #732982
+     );
+   animation:slidebg 2s linear infinite;
+  }
+  
+  
+  .rainbow-5:hover{
+   background-image:     linear-gradient(     to right,      #f4000d,     #E7484F 16.65%,          #732982 83.25%,     #732982 100%,     #E7484F 100%               );
+   animation:slidebg 6s linear infinite;
+   -webkit-animation:slidebg 6s linear infinite;
+  }
+  
+  
+  @keyframes slidebg {
+   to {
+     background-position:20vw;
+   }
+  }
+  /* ================= */
+  
+  
