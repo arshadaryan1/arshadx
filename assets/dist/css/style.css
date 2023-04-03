@@ -37,6 +37,24 @@
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     font-weight: 600;
 }
+ .nav-link:hover{
+    background-color: rgb(248, 44, 44);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    color: white;
+}
+.nav-item .active{
+    background-color: rgb(248, 44, 44);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    color: white;
+}
 .banner-style{
     
     height: 600px;
