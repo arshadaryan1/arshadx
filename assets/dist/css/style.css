@@ -440,6 +440,10 @@ font-size: 25px;
     font-family: gilroy-B;
     /* font-weight: bolder; */
 }
+.citis{
+    /* margin: auto; */
+   gap: 12px;
+}
 
 footer{
 
