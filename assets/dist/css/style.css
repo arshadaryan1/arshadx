@@ -90,7 +90,7 @@
     }
 }
 #preloader {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -488,9 +488,7 @@ font-weight: 1000;
 font-size: 25px;
 
 }
-.number {
 
-}
 .number hr{
     width: 35vw;
     margin-top: -3%;
@@ -515,7 +513,7 @@ font-size: 25px;
 }
 .citis{
     /* margin: auto; */
-   gap: 12px;
+   /* gap: 12px; */
 }
 
 footer{
@@ -564,6 +562,7 @@ footer{
 }
 .socials a:hover i{
     color: dodgerblue;
+    cursor: pointer;
 }
 /* copyright*/
 .footer-copyright{
