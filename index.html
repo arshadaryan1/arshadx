@@ -18,177 +18,267 @@
     <link href="https://fonts.googleapis.com/css?family=Kanit:200,400,500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="AX_Logo.png" type="image/x-icon">
-
+<style>
+    #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
 </head>
 
-<body oncontextmenu="return false">
+<body oncontextmenu="return false" onload="myFunction()" style="margin:0;">
+   <div id="preloader">
+    <div id="loader"></div>
+   </div>
+
 
     <!-- ====================START HEADER======================= -->
-    <div class="header">
-        <nav id="navbar" class="navbar navbar-expand-lg ">
-            <div class="container">
+    <div id="main-div" style="display: none; " class="animate-bottom">
+        <div class="header">
+            <nav id="navbar" class="navbar navbar-expand-lg ">
+                <div class="container">
 
-                <a class="navbar-brand" href="#">
-                    <img src="AX_Logo.png" style="width: 65px;" alt="Logo" class="logo">
-                    <span class="logo-text" style="opacity: 0;">ArshadX Enterprises</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover" style="background: transparent; color: rgb(255, 0, 0);"
-                                href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background-color: transparent; color: rgb(255, 255, 255);"
-                                href="form.html">Form</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="blog.html">Blog</a>
-                        </li>
+                    <a class="navbar-brand" href="#">
+                        <img src="AX_Logo.png" style="width: 65px;" alt="Logo" class="logo">
+                        <span class="logo-text" style="opacity: 0;">ArshadX Enterprises</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 0, 0);" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background-color: transparent; color: rgb(255, 255, 255);"
+                                    href="form.html">Form</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);"
+                                    href="blog.html">Blog</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="#">Login</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success glow-on-hover" type="submit">Search</button>
-                    </form>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);"
+                                    href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);" href="#">Login</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success glow-on-hover" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-
-    <!-- ======================END HEADER==================== -->
-    <!-- =================================banner========================== -->
-    <section>
-        <div class="container-fluid slider">
-            <div class="row">
-                <div class="col-lg-6  text">
-                    <h3 class="color-blue banner-title animate-charcter">Excellent IT services for your success </h3>
-                    <p>We provide the most responsive and functional IT design for companies and businesses worldwide.
-                    </p>
-
-                    <button class="btn btn-outline-success glow-on-hover" type="submit">Explore</button>
-
-
-                </div>
-                <div class="col-5 svg">
-                    <img class="img-fluid" src="./assets/img/banner-svg.jpg" alt="">
-
-                </div>
-            </div>
+            </nav>
         </div>
-    </section>
-    <!-- end slider section here  -->
 
-    <!-- start here lead wrapper -->
 
-    <section class="lead-section">
-        <div class="container-fluid lead">
-            <div class="row">
-                <h2>India's Most Loved IT Community <span class="heart">&#10084;</span></h2>
+        <!-- ======================END HEADER==================== -->
+        <!-- =================================banner========================== -->
+        <section>
+            <div class="container-fluid slider">
+                <div class="row">
+                    <div class="col-lg-6  text">
+                        <h3 class="color-blue banner-title animate-charcter">Excellent IT services for your success
+                        </h3>
+                        <p>We provide the most responsive and functional IT design for companies and businesses
+                            worldwide.
+                        </p>
+
+                        <button class="btn btn-outline-success glow-on-hover" type="submit">Explore</button>
+
+
+                    </div>
+                    <div class="col-5 svg">
+                        <img class="img-fluid" src="./assets/img/banner-svg.jpg" alt="">
+
+                    </div>
+                </div>
             </div>
-            <div class="row lead-box ">
-                <div class="col-4 lead-content">
-                    <div class="col-2">
-                        <img src="./assets/img/customer.png" alt="">
+        </section>
+        <!-- end slider section here  -->
+
+        <!-- start here lead wrapper -->
+
+        <section class="lead-section">
+            <div class="container-fluid lead">
+                <div class="row">
+                    <h2>India's Most Loved IT Community <span class="heart">&#10084;</span></h2>
+                </div>
+                <div class="row lead-box ">
+                    <div class="col-4 lead-content">
+                        <div class="col-2">
+                            <img src="./assets/img/customer.png" alt="">
+                            <!-- img 32px download from flaticon -->
+                        </div>
+                        <div class="col-lg-10">
+                            <p>100+ HAPPY CUSTOMERS</p>
+                        </div>
+                    </div>
+                    <div class="col-4 lead-content">
+                        <div class="col-2">
+                            <img src="./assets/img/finish-line.png" alt="">
+                        </div>
+                        <div class="col-10">
+                            <p>FINISHED PROJECTS</p>
+                        </div>
                         <!-- img 32px download from flaticon -->
                     </div>
-                    <div class="col-lg-10">
-                        <p>100+ HAPPY CUSTOMERS</p>
+                    <div class="col-4 lead-content">
+                        <div class="col-2">
+                            <img src="./assets/img/support.png" alt="">
+                        </div>
+                        <div class="col-lg-12">
+                            <p>24x7 CUSTOMERS SUPPORTS</p>
+                        </div>
+                        <!-- img 32px download from flaticon -->
                     </div>
                 </div>
-                <div class="col-4 lead-content">
-                    <div class="col-2">
-                        <img src="./assets/img/finish-line.png" alt="">
-                    </div>
-                    <div class="col-10">
-                        <p>FINISHED PROJECTS</p>
-                    </div>
-                    <!-- img 32px download from flaticon -->
-                </div>
-                <div class="col-4 lead-content">
-                    <div class="col-2">
-                        <img src="./assets/img/support.png" alt="">
-                    </div>
-                    <div class="col-lg-12">
-                        <p>24x7 CUSTOMERS SUPPORTS</p>
-                    </div>
-                    <!-- img 32px download from flaticon -->
-                </div>
+
             </div>
 
-        </div>
 
+        </section>
+        <!-- end here lead wrapper -->
+        <!-- about section -->
+        <section>
+            <div class="container-fluid mt-4">
+                <div class="container">
+                    <div class="row">
+                        <h1>About</h1>
+                        <p>Welcome to ArshadX, your premier destination for exceptional website designing services. We
+                            are a
+                            team of talented and experienced professionals dedicated to helping businesses and
+                            individuals
+                            achieve their online goals through beautiful and functional websites.
+                            <br>
+                            <br>
+                            At ArshadX, we understand that a website is the first impression that visitors have of your
+                            business. As such, we are committed to creating stunning designs that are not only visually
+                            appealing but also user-friendly, fast-loading, and optimized for search engines. Our team
+                            of
+                            experts will work with you every step of the way to ensure that your website meets your
+                            specific
+                            requirements and exceeds your expectations.
+                            <br>
+                            <br>
+                            Whether you need a simple website for your small business or a complex e-commerce platform
+                            for
+                            your online store, we have the skills and expertise to deliver results. We specialize in
+                            custom
+                            website design, website development, website maintenance, website redesign, and website
+                            optimization services.
+                            <br>
+                            <br>
 
-    </section>
-    <!-- end here lead wrapper -->
-    <!-- about section -->
-    <section>
-        <div class="container-fluid mt-4">
-            <div class="container">
-                <div class="row">
-                    <h1>About</h1>
-                    <p>Welcome to ArshadX, your premier destination for exceptional website designing services. We are a
-                        team of talented and experienced professionals dedicated to helping businesses and individuals
-                        achieve their online goals through beautiful and functional websites.
-                        <br>
-                        <br>
-                        At ArshadX, we understand that a website is the first impression that visitors have of your
-                        business. As such, we are committed to creating stunning designs that are not only visually
-                        appealing but also user-friendly, fast-loading, and optimized for search engines. Our team of
-                        experts will work with you every step of the way to ensure that your website meets your specific
-                        requirements and exceeds your expectations.
-                        <br>
-                        <br>
-                        Whether you need a simple website for your small business or a complex e-commerce platform for
-                        your online store, we have the skills and expertise to deliver results. We specialize in custom
-                        website design, website development, website maintenance, website redesign, and website
-                        optimization services.
-                        <br>
-                        <br>
+                            We believe that every business deserves a professional and effective online presence, and we
+                            are
+                            dedicated to making that a reality for our clients. Our commitment to excellence and
+                            customer
+                            satisfaction is unparalleled, and we strive to provide exceptional service and support
+                            throughout the entire process.
+                            <br>
+                            <br>
 
-                        We believe that every business deserves a professional and effective online presence, and we are
-                        dedicated to making that a reality for our clients. Our commitment to excellence and customer
-                        satisfaction is unparalleled, and we strive to provide exceptional service and support
-                        throughout the entire process.
-                        <br>
-                        <br>
+                            If you are looking for a reliable and trustworthy website designing company, look no further
+                            than ArshadX. Contact us today to discuss your project and let us help you bring your online
+                            vision to life.
+                            <br>
 
-                        If you are looking for a reliable and trustworthy website designing company, look no further
-                        than ArshadX. Contact us today to discuss your project and let us help you bring your online
-                        vision to life.
-                        <br>
-
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- about section -->
+        </section>
+        <!-- about section -->
 
+   
     <section>
         <div class="container-fluid">
             <div class="container">
@@ -338,16 +428,18 @@
                         <div class="card-body">
                             <h3>BHOPAL, MP</h3>
                             <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
-                                <i style="color: rgb(23, 231, 4);" class="fa-solid fa-user-group"></i>                                2000+ Happy Customer
+                                <i style="color: rgb(23, 231, 4);" class="fa-solid fa-user-group"></i> 2000+ Happy
+                                Customer
                             </div>
 
-                            <div class="city-feature"  style="color: rgb(237, 0, 206); font-size: 18px;">
+                            <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
                                 <i style="color: rgb(23, 231, 4);" class="fa-solid fa-star"></i>
                                 05+ Working Team
                             </div>
-                            <div class="city-feature"  style="color: rgb(237, 0, 206); font-size: 18px;">
+                            <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
                                 <i style="color: rgb(23, 231, 4);" class="fa-brands fa-twitter"></i>
-                                <a href="https://www.twitter.com/ar_shadx" class="text-decoration-none" style="color: rgb(235, 8, 8);">@ArshadX</a>
+                                <a href="https://www.twitter.com/ar_shadx" class="text-decoration-none"
+                                    style="color: rgb(235, 8, 8);">@ArshadX</a>
                             </div>
                         </div>
                     </div>
@@ -358,16 +450,18 @@
                         <div class="card-body">
                             <h3>SAGAR, MP</h3>
                             <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
-                                <i style="color: rgb(23, 231, 4);" class="fa-solid fa-user-group"></i>                                2000+ Happy Customer
+                                <i style="color: rgb(23, 231, 4);" class="fa-solid fa-user-group"></i> 2000+ Happy
+                                Customer
                             </div>
 
-                            <div class="city-feature"  style="color: rgb(237, 0, 206); font-size: 18px;">
+                            <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
                                 <i style="color: rgb(23, 231, 4);" class="fa-solid fa-star"></i>
                                 05+ Working Team
                             </div>
-                            <div class="city-feature"  style="color: rgb(237, 0, 206); font-size: 18px;">
+                            <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
                                 <i style="color: rgb(23, 231, 4);" class="fa-brands fa-twitter"></i>
-                                <a href="https://www.twitter.com/ar_shadx" class="text-decoration-none" style="color: rgb(235, 8, 8);">@ArshadX</a>
+                                <a href="https://www.twitter.com/ar_shadx" class="text-decoration-none"
+                                    style="color: rgb(235, 8, 8);">@ArshadX</a>
                             </div>
                         </div>
                     </div>
@@ -378,16 +472,18 @@
                         <div class="card-body">
                             <h3>SIWAN, BIHAR</h3>
                             <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
-                                <i style="color: rgb(23, 231, 4);" class="fa-solid fa-user-group"></i>                                2000+ Happy Customer
+                                <i style="color: rgb(23, 231, 4);" class="fa-solid fa-user-group"></i> 2000+ Happy
+                                Customer
                             </div>
 
-                            <div class="city-feature"  style="color: rgb(237, 0, 206); font-size: 18px;">
+                            <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
                                 <i style="color: rgb(23, 231, 4);" class="fa-solid fa-star"></i>
                                 05+ Working Team
                             </div>
-                            <div class="city-feature"  style="color: rgb(237, 0, 206); font-size: 18px;">
+                            <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
                                 <i style="color: rgb(23, 231, 4);" class="fa-brands fa-twitter"></i>
-                                <a href="https://www.twitter.com/ar_shadx" class="text-decoration-none" style="color: rgb(235, 8, 8);">@ArshadX</a>
+                                <a href="https://www.twitter.com/ar_shadx" class="text-decoration-none"
+                                    style="color: rgb(235, 8, 8);">@ArshadX</a>
                             </div>
                         </div>
                     </div>
@@ -397,22 +493,24 @@
                         <div class="card-body">
                             <h3>GOPALGANJ, BIHAR</h3>
                             <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
-                                <i style="color: rgb(23, 231, 4);" class="fa-solid fa-user-group"></i>                                2000+ Happy Customer
+                                <i style="color: rgb(23, 231, 4);" class="fa-solid fa-user-group"></i> 2000+ Happy
+                                Customer
                             </div>
 
-                            <div class="city-feature"  style="color: rgb(237, 0, 206); font-size: 18px;">
+                            <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
                                 <i style="color: rgb(23, 231, 4);" class="fa-solid fa-star"></i>
                                 05+ Working Team
                             </div>
-                            <div class="city-feature"  style="color: rgb(237, 0, 206); font-size: 18px;">
+                            <div class="city-feature" style="color: rgb(237, 0, 206); font-size: 18px;">
                                 <i style="color: rgb(23, 231, 4);" class="fa-brands fa-twitter"></i>
-                                <a href="https://www.twitter.com/ar_shadx" class="text-decoration-none" style="color: rgb(235, 8, 8);">@ArshadX</a>
+                                <a href="https://www.twitter.com/ar_shadx" class="text-decoration-none"
+                                    style="color: rgb(235, 8, 8);">@ArshadX</a>
                             </div>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
+        </div>
 
     </section>
     <!-- footer -->
@@ -432,10 +530,22 @@
             </div>
         </div>
     </footer>
+</div>
     <!-- footer -->
 
 
+    <script>
+        var myVar;
 
+        function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("main-div").style.display = "block";
+        }
+    </script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
