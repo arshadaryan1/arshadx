@@ -735,4 +735,8 @@ footer{
   .slick-arrow.slick-hidden {
       display: none;
   }
- 
+ /* form */
+ .ldate{
+    color: #cd1212;
+    /* font-weight: bold; */
+ }
