@@ -762,7 +762,26 @@ footer{
       display: none;
   }
  /* form */
- .ldate{
+ .date{
     color: #cd1212;
-    /* font-weight: bold; */
+    font-weight: 900;
+    font-family: Poppins-Black;
+ }
+ .blue-date{
+    color: #1500b5;
+    font-weight: 900;
+
+    font-family: Poppins-Black;
+ }
+ .fee-datails{
+    /* color: #1500b5; */
+    font-weight: 900;
+    font-family: Poppins-Black;
+ }
+ .first-step-of-form ul li{
+    line-height: 2rem;
+ }
+ .font-bold{
+    font-weight: 900;
+    font-family: Poppins-Black;
  }
