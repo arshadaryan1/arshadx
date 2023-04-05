@@ -31,6 +31,10 @@
 }
 .heading-d{
     font-family: PB;
+    color: black;
+	font-size: 34px;
+	-webkit-text-stroke: 1px black;
+	-webkit-text-fill-color: white;
 }
 
 /* preloder */
