@@ -15,6 +15,11 @@
     font-family: Julee ;
     src: url(/assets/fonts/Julee-Regular.ttf);
 }
+
+@font-face {
+    font-family: PB ;
+    src: url(/assets/fonts/Poppins-Bold.ttf);
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Satisfy&display=swap');
 
 
@@ -24,6 +29,10 @@
     margin: 0;
     font-family:  Gilroy-L;
 }
+.heading-d{
+    font-family: PB;
+}
+
 /* preloder */
 #loader {
     display: block;
