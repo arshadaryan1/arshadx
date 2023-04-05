@@ -45,6 +45,10 @@
      -webkit-text-stroke: 1.2px rgb(255, 255, 255);
      -webkit-text-fill-color: transparent;
 }
+.heading-post{
+    font-family:Poppins-Black ;
+    font-weight: 900;
+}
 
 /* preloder */
 #loader {
