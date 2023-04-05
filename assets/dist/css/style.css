@@ -513,7 +513,7 @@ font-size: 25px;
 }
 .citis{
     /* margin: auto; */
-   gap: 1rem;
+  padding: 5px;
 }
 
 footer{
