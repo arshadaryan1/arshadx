@@ -23,101 +23,146 @@
 
 <body oncontextmenu="return false" onload="myFunction()" style="margin:0;">
     <div id="preloader">
-     <div id="loader"></div>
+        <div id="loader"></div>
     </div>
- 
- 
-     <!-- ====================START HEADER======================= -->
-     <div id="main-div" style="display: none; " class="animate-bottom">
-    <div class="header">
-        <nav id="navbar" class="navbar navbar-expand-lg ">
-            <div class="container">
 
-                <a class="navbar-brand" href="#">
-                    <img src="AX_Logo.png" style="width: 65px;" alt="Logo" class="logo">
-                    <span class="logo-text" style="opacity: 0;">ArshadX Enterprises</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" 
-                                href="../">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="../services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background-color: transparent; color: rgb(255, 255, 255);"
-                                href="../form">Form</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="../blog">Blog</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="../about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 255, 255);" href="../contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link glow-on-hover"
-                                style="background: transparent; color: rgb(255, 0, 0);" href="../login">Login</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success glow-on-hover" type="submit">Search</button>
-                    </form>
+    <!-- ====================START HEADER======================= -->
+    <div id="main-div" style="display: none; " class="animate-bottom">
+        <div class="header">
+            <nav id="navbar" class="navbar navbar-expand-lg ">
+                <div class="container">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="AX_Logo.png" style="width: 65px;" alt="Logo" class="logo">
+                        <span class="logo-text" style="opacity: 0;">ArshadX Enterprises</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);" href="../">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);"
+                                    href="../services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background-color: transparent; color: rgb(255, 255, 255);"
+                                    href="../form">Form</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);" href="../blog">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);"
+                                    href="../about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 255, 255);"
+                                    href="../contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link glow-on-hover"
+                                    style="background: transparent; color: rgb(255, 0, 0);" href="../login">Login</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success glow-on-hover" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- ======================END HEADER==================== -->
+
+
+
+
+
+
+
+        <div class="container-fluid bg-red">
+            <div class="container p-5 text-center">
+                <div class="row border rounded-4 p-5">
+                    <div class="col order-2">
+                        <form class="login-form" action="login.php" method="post">
+                            <!-- <h1>Login</h1> -->
+                            <input class="rounded-4 text-center placeholder-wave" style="width: auto;" type="text"
+                                id="username" name="username" placeholder="username" autocomplete="off" required>
+                            <br>
+                            <br>
+                            <input class="rounded-4 text-center placeholder-wave" style="width: auto;" type="password"
+                                id="password" name="password" placeholder="password" required>
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn btn-primary ">Login</button>
+                        </form>
+                    </div>
+                    <div class="col waviy m-auto order-1 text-white">
+                        <h3 class="">
+                            <span style="--i:25">Nice </span>
+                            <span style="--i:30"> To</span>
+                            <span style="--i:35"> See </span>
+                            <span style="--i:40"> You </span>
+                            <span style="--i:45">Again </span>
+                        </h3>
+                        <h1 class="">
+                            <span style="--i:2">W</span>
+                            <span style="--i:3">E</span>
+                            <span style="--i:4">L</span>
+                            <span style="--i:5">C</span>
+                            <span style="--i:6">O</span>
+                            <span style="--i:7">M</span>
+                            <span style="--i:8">E</span>
+                            <span style="--i:9"></span>
+                            <span style="--i:10">B</span>
+                            <span style="--i:12">A</span>
+                            <span style="--i:13">C</span>
+                            <span style="--i:14">K</span>
+                        </h1>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </div>
-
-
-    <!-- ======================END HEADER==================== -->
-
-
-
-
-
-
-    
-
-
-<!-- footer -->
-<footer>
-    <div class="footer">
-        <p class="stay-connected">Stay Connected> </p>
-        <ul class="socials">
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-        </ul>
-        <div class="footer-copyright">
-            <p>Copyright &copy;2023 Design & Development By <a class="text-decoration-none"
-                    href="www.siteflow.cloud" style="color: #fff;">SiteFlow</a></p>
         </div>
-    </div>
-</footer>
-<!-- footer -->
 
 
-<script src="script.js"></script>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- footer -->
+        <footer>
+            <div class="footer">
+                <p class="stay-connected">Stay Connected> </p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+                <div class="footer-copyright">
+                    <p>Copyright &copy;2023 Design & Development By <a class="text-decoration-none"
+                            href="www.siteflow.cloud" style="color: #fff;">SiteFlow</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+
+
+        <script src="script.js"></script>
+        <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

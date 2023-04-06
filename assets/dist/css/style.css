@@ -811,3 +811,20 @@ footer{
     margin-right: 10px;
     vertical-align: middle;
   }
+
+  /* login */
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .waviy span{
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
